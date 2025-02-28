@@ -1,0 +1,38 @@
+travel-recommendation-system/
+├── backend/
+│   ├── travel_recommendation/
+│   │   ├── __init__.py
+│   │   ├── settings.py          # Django settings file
+│   │   ├── urls.py              # URL routing for the Django app
+│   │   ├── wsgi.py              # WSGI application for deployment
+│   │   ├── asgi.py              # ASGI application for real-time connections (optional)
+│   │   ├── models.py            # Django models for storing travel data
+│   │   ├── views.py             # Views for the recommendation logic and API
+│   │   ├── serializers.py       # Serializers for data transfer (JSON format)
+│   │   ├── recommendation.py    # Logic for generating recommendations
+│   │   ├── data_processing.py   # Data cleaning and preprocessing scripts
+│   │   ├── real_time_data.py    # Handling real-time data (weather, events, etc.)
+│   ├── manage.py               # Django's command-line utility
+│   ├── requirements.txt         # Python dependencies (Django, scikit-learn, etc.)
+│   ├── config.py                # Configuration file (API keys, DB settings, etc.)
+├── frontend/
+│   ├── public/
+│   │   ├── index.html           # HTML template for the React app
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Header.js        # Header component
+│   │   │   ├── TravelCard.js    # Component to display travel recommendations
+│   │   │   ├── LocationInput.js # Component for user location input
+│   │   ├── services/
+│   │   │   ├── api.js           # API calls to the backend
+│   │   ├── App.js               # Main app component
+│   │   ├── index.js             # Entry point to render the app
+│   ├── package.json             # Node.js dependencies (React, axios, etc.)
+├── database/
+│   ├── schema.sql               # SQL schema to create the required tables
+│   ├── migrations/               # Database migrations (Django ORM)
+├── docs/
+│   ├── README.md                # Project overview and setup instructions
+│   ├── architecture_diagram.png # High-level architecture diagram
+├── .gitignore                   # Git ignore file
+└── requirements.txt             # Python dependencies (for backend)
